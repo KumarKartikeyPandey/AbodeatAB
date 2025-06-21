@@ -102,7 +102,7 @@
 
             <!-- Services Tab Navigation -->
             <div class="services-tab-nav">
-                <button class="service-tab active" data-service="revenue-management">
+                <button class="service-tab active" data-service="revenue-management" onclick="document.getElementById('revenue-management').scrollIntoView({ behavior: 'smooth' });">
                     <div class="tab-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="18" y1="20" x2="18" y2="10"></line>
@@ -110,10 +110,11 @@
                             <line x1="6" y1="20" x2="6" y2="14"></line>
                         </svg>
                     </div>
-                    <span>Revenue Management</span>
+                        <span>Revenue Management</span>
                 </button>
 
-                <button class="service-tab" data-service="digital-marketing">
+
+                <button class="service-tab" data-service="digital-marketing" onclick="document.getElementById('digital-marketing').scrollIntoView({behavior:'smooth'});">
                     <div class="tab-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M12 2L2 7l10 5 10-5-10-5z"></path>

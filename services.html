@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - AbodeatAB</title>
+    <meta name="description" content="Comprehensive hotel revenue management and digital marketing services to maximize your property's potential.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo.png" alt="AbodeatAB Logo" class="logo-icon" />
+                    <span class="logo-text">AbodeatAB</span>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html#about" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link active">Services</a>
+                    <a href="index.html#testimonials" class="nav-link">Success Stories</a>
+                    <a href="index.html#platforms" class="nav-link">Platforms</a>
+                    <a href="index.html#blogs" class="nav-link">Insights</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="nav-actions">
+                    <button class="btn-secondary">Login</button>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html#about" class="mobile-nav-link">About</a>
+                <a href="services.html" class="mobile-nav-link">Services</a>
+                <a href="index.html#testimonials" class="mobile-nav-link">Success Stories</a>
+                <a href="index.html#platforms" class="mobile-nav-link">Platforms</a>
+                <a href="index.html#blogs" class="mobile-nav-link">Insights</a>
+                <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+                <div class="mobile-actions">
+                    <button class="btn-secondary">Login</button>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="services-hero-content">
+                <h1 class="services-hero-title visible-heading">
+                    <span class="title-line">Comprehensive</span>
+                    <span class="title-highlight">Digital Solutions</span>
+                </h1>
+                <p class="services-hero-description">
+                    From revenue management to digital marketing, we provide end-to-end solutions 
+                    that drive growth, enhance visibility, and maximize your business potential.
+                </p>
+                <div class="services-stats">
+                    <div class="services-stat">
+                        <div class="stat-number">17+</div>
+                        <div class="stat-label">Service Categories</div>
+                    </div>
+                    <div class="services-stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="services-stat">
+                        <div class="stat-number">97%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Tabs Section -->
+    <section class="services-tabs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title visible-heading">Our Service Portfolio</h2>
+                <p class="section-description">
+                    Explore our comprehensive range of services designed to elevate your business 
+                    and drive sustainable growth across all digital channels.
+                </p>
+            </div>
+
+            <!-- Services Tab Navigation -->
+            <div class="services-tab-nav">
+                <button class="service-tab active" data-service="revenue-management">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <span>Revenue Management</span>
+                </button>
+
+                <button class="service-tab" data-service="digital-marketing">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <span>Digital Marketing</span>
+                </button>
+
+                <button class="service-tab" data-service="website-development">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14,2 14,8 20,8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10,9 9,9 8,9"></polyline>
+                        </svg>
+                    </div>
+                    <span>Website Development</span>
+                </button>
+
+                <button class="service-tab" data-service="booking-engine">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <span>Booking Engine</span>
+                </button>
+
+                <button class="service-tab" data-service="channel-manager">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                        </svg>
+                    </div>
+                    <span>Channel Manager</span>
+                </button>
+
+                <button class="service-tab" data-service="sales-support">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <span>Sales Support</span>
+                </button>
+
+                <button class="service-tab" data-service="reputation-management">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"></polygon>
+                        </svg>
+                    </div>
+                    <span>Online Reputation</span>
+                </button>
+
+                <button class="service-tab" data-service="hotel-audit">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14,2 14,8 20,8"></polyline>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <span>Hotel Audit</span>
+                </button>
+
+                <button class="service-tab" data-service="social-media">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </div>
+                    <span>Social Media Marketing</span>
+                </button>
+
+                <button class="service-tab" data-service="seo">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <span>Search Engine Optimization</span>
+                </button>
+
+                <button class="service-tab" data-service="performance-marketing">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <span>Performance Marketing</span>
+                </button>
+
+                <button class="service-tab" data-service="email-marketing">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <span>Email Marketing</span>
+                </button>
+
+                <button class="service-tab" data-service="architecture-marketing">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21h18"></path>
+                            <path d="M5 21V7l8-4v18"></path>
+                            <path d="M19 21V11l-6-4"></path>
+                        </svg>
+                    </div>
+                    <span>Architecture Marketing</span>
+                </button>
+
+                <button class="service-tab" data-service="graphic-design">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <circle cx="9" cy="9" r="2"></circle>
+                            <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+                        </svg>
+                    </div>
+                    <span>Graphic Designing</span>
+                </button>
+
+                <button class="service-tab" data-service="video-editing">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                        </svg>
+                    </div>
+                    <span>Video Editing</span>
+                </button>
+
+                <button class="service-tab" data-service="influencer-marketing">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <span>Influencer Marketing</span>
+                </button>
+
+                <button class="service-tab" data-service="prelaunch-marketing">
+                    <div class="tab-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </div>
+                    <span>Pre-launch Marketing</span>
+                </button>
+            </div>
+
+            <!-- Services Tab Content -->
+            <div class="services-tab-content">
+                <!-- Revenue Management -->
+                <div class="service-content active" id="revenue-management">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Revenue Management Excellence</h3>
+                            <p class="service-detail-description">
+                                Maximize your hotel's financial performance with our advanced revenue management strategies. 
+                                We combine cutting-edge analytics, market intelligence, and pricing optimization to ensure 
+                                optimal room rates and increased profitability.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Dynamic pricing strategies</li>
+                                <li>Demand forecasting and analysis</li>
+                                <li>Market positioning optimization</li>
+                                <li>RevPAR and ADR improvement</li>
+                                <li>Competitive analysis and benchmarking</li>
+                                <li>Revenue dashboard and reporting</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">25-30% Revenue Increase</h4>
+                                        <p class="benefit-desc">Average improvement in total annual revenue</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">Real-time Optimization</h4>
+                                        <p class="benefit-desc">Dynamic pricing adjustments 24/7</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Revenue Management Dashboard">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="service-content" id="digital-marketing">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Comprehensive Digital Marketing</h3>
+                            <p class="service-detail-description">
+                                Boost your online presence and drive more bookings with our integrated digital marketing solutions. 
+                                From SEO to paid advertising, we create comprehensive campaigns that deliver measurable results 
+                                and maximize your return on investment.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Multi-channel marketing campaigns</li>
+                                <li>Search engine marketing (SEM)</li>
+                                <li>Social media advertising</li>
+                                <li>Content marketing strategy</li>
+                                <li>Conversion rate optimization</li>
+                                <li>Analytics and performance tracking</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                            <path d="M2 17l10 5 10-5"></path>
+                                            <path d="M2 12l10 5 10-5"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">200% Traffic Increase</h4>
+                                        <p class="benefit-desc">Average website traffic growth</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <circle cx="12" cy="12" r="6"></circle>
+                                            <circle cx="12" cy="12" r="2"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">ROI Focused</h4>
+                                        <p class="benefit-desc">Every campaign optimized for returns</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Digital Marketing Campaign">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Development -->
+                <div class="service-content" id="website-development">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Professional Website Development</h3>
+                            <p class="service-detail-description">
+                                Create stunning, high-performing websites that convert visitors into bookings. Our development 
+                                team specializes in responsive, SEO-optimized websites with integrated booking systems and 
+                                superior user experience design.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Responsive web design</li>
+                                <li>Mobile-first development</li>
+                                <li>SEO-optimized architecture</li>
+                                <li>Fast loading performance</li>
+                                <li>CMS integration</li>
+                                <li>Ongoing maintenance and support</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14,2 14,8 20,8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">Lightning Fast</h4>
+                                        <p class="benefit-desc">Sub-3 second loading times</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">Mobile Optimized</h4>
+                                        <p class="benefit-desc">Perfect on all devices</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Website Development">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Engine -->
+                <div class="service-content" id="booking-engine">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Advanced Booking Engine Solutions</h3>
+                            <p class="service-detail-description">
+                                Streamline your reservation process with our state-of-the-art booking engine. Designed for 
+                                maximum conversion rates, our solution offers seamless user experience, real-time availability, 
+                                and secure payment processing.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Real-time availability and pricing</li>
+                                <li>Secure payment gateway integration</li>
+                                <li>Mobile-responsive interface</li>
+                                <li>Multi-language support</li>
+                                <li>Advanced booking analytics</li>
+                                <li>Custom booking flow optimization</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">70% Conversion Rate</h4>
+                                        <p class="benefit-desc">Industry-leading booking completion</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">Secure Payments</h4>
+                                        <p class="benefit-desc">PCI DSS compliant processing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Booking Engine Interface">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Channel Manager -->
+                <div class="service-content" id="channel-manager">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Intelligent Channel Management</h3>
+                            <p class="service-detail-description">
+                                Maximize your property's reach across all booking channels with our comprehensive channel 
+                                management solution. Synchronize inventory, rates, and bookings across OTAs, direct channels, 
+                                and global distribution systems effortlessly.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Multi-channel inventory synchronization</li>
+                                <li>Rate parity monitoring</li>
+                                <li>Automated booking distribution</li>
+                                <li>OTA performance analytics</li>
+                                <li>Direct booking optimization</li>
+                                <li>Commission management</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">20+ Top Channels</h4>
+                                        <p class="benefit-desc">Connected OTAs and platforms</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">Real-time Sync</h4>
+                                        <p class="benefit-desc">Instant updates across all channels</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/4560142/pexels-photo-4560142.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Channel Management Dashboard">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sales Support -->
+                <div class="service-content" id="sales-support">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Strategic Sales Support</h3>
+                            <p class="service-detail-description">
+                                Enhance your sales performance with our comprehensive support services. From lead generation 
+                                to closing deals, we provide the tools, training, and strategies your team needs to maximize 
+                                revenue and build lasting customer relationships.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Lead generation and qualification</li>
+                                <li>Sales process optimization</li>
+                                <li>CRM system implementation</li>
+                                <li>Sales training and coaching</li>
+                                <li>Performance tracking and analytics</li>
+                                <li>Customer relationship management</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">45% More Leads</h4>
+                                        <p class="benefit-desc">Qualified sales opportunities</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">30% Higher Close Rate</h4>
+                                        <p class="benefit-desc">Improved conversion performance</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Sales Support Team">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue with other services... -->
+                <!-- Online Reputation Management -->
+                <div class="service-content" id="reputation-management">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Online Reputation Management</h3>
+                            <p class="service-detail-description">
+                                Protect and enhance your brand's online reputation with our comprehensive monitoring and 
+                                management services. We help you maintain positive reviews, respond to feedback effectively, 
+                                and build trust with potential customers.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Review monitoring across platforms</li>
+                                <li>Professional response management</li>
+                                <li>Reputation crisis management</li>
+                                <li>Review generation campaigns</li>
+                                <li>Sentiment analysis and reporting</li>
+                                <li>Brand mention tracking</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">4.2+ Star Rating</h4>
+                                        <p class="benefit-desc">Average improvement in ratings</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">24/7 Monitoring</h4>
+                                        <p class="benefit-desc">Continuous reputation tracking</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/5466806/pexels-photo-5466806.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Online Reputation Management">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add other service contents with similar structure -->
+                <!-- I'll add the remaining services for completeness -->
+
+                <!-- Hotel Audit -->
+                <div class="service-content" id="hotel-audit">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Comprehensive Hotel Audit</h3>
+                            <p class="service-detail-description">
+                                Get actionable insights into your hotel's performance with our detailed audit services. 
+                                We analyze operations, revenue streams, guest experience, and market positioning to 
+                                identify opportunities for improvement and growth.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Operational efficiency assessment</li>
+                                <li>Revenue stream analysis</li>
+                                <li>Guest experience evaluation</li>
+                                <li>Market positioning review</li>
+                                <li>Competitive analysis</li>
+                                <li>Actionable improvement plan</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14,2 14,8 20,8"></polyline>
+                                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">50+ Checkpoints</h4>
+                                        <p class="benefit-desc">Comprehensive evaluation criteria</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">20% Cost Savings</h4>
+                                        <p class="benefit-desc">Average operational efficiency gain</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/7413915/pexels-photo-7413915.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Hotel Audit Process">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Marketing -->
+                <div class="service-content" id="social-media">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Social Media Marketing</h3>
+                            <p class="service-detail-description">
+                                Build a strong social media presence that drives engagement and bookings. Our social media 
+                                experts create compelling content, manage your online communities, and run targeted campaigns 
+                                across all major platforms.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Content creation and curation</li>
+                                <li>Multi-platform management</li>
+                                <li>Influencer collaborations</li>
+                                <li>Social media advertising</li>
+                                <li>Community engagement</li>
+                                <li>Performance analytics</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">300% Engagement</h4>
+                                        <p class="benefit-desc">Average increase in social engagement</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">10K+ Followers</h4>
+                                        <p class="benefit-desc">Monthly follower growth average</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Social Media Marketing">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEO -->
+                <div class="service-content" id="seo">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Search Engine Optimization</h3>
+                            <p class="service-detail-description">
+                                Improve your search rankings and drive organic traffic with our comprehensive SEO services. 
+                                We optimize your website, content, and online presence to ensure maximum visibility in 
+                                search results for relevant keywords.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Technical SEO optimization</li>
+                                <li>Keyword research and strategy</li>
+                                <li>Content optimization</li>
+                                <li>Local SEO for hospitality</li>
+                                <li>Link building campaigns</li>
+                                <li>SEO performance tracking</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <path d="M21 21l-4.35-4.35"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">Top 3 Rankings</h4>
+                                        <p class="benefit-desc">For target keywords within 6 months</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">200% Organic Growth</h4>
+                                        <p class="benefit-desc">Average increase in organic traffic</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="SEO Optimization">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance Marketing -->
+                <div class="service-content" id="performance-marketing">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Performance Marketing</h3>
+                            <p class="service-detail-description">
+                                Drive measurable results with our data-driven performance marketing campaigns. We focus on 
+                                ROI-driven strategies across paid search, display advertising, and social media to maximize 
+                                your marketing investment and booking conversions.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>PPC campaign management</li>
+                                <li>Display advertising</li>
+                                <li>Retargeting campaigns</li>
+                                <li>Conversion tracking</li>
+                                <li>A/B testing optimization</li>
+                                <li>ROI performance reporting</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <circle cx="12" cy="12" r="6"></circle>
+                                            <circle cx="12" cy="12" r="2"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">350% ROAS</h4>
+                                        <p class="benefit-desc">Return on advertising spend</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">Real-time Optimization</h4>
+                                        <p class="benefit-desc">Continuous campaign improvements</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Performance Marketing Dashboard">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email Marketing -->
+                <div class="service-content" id="email-marketing">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Email Marketing</h3>
+                            <p class="service-detail-description">
+                                Build lasting relationships with guests through strategic email marketing campaigns. Our 
+                                personalized approach increases direct bookings, enhances guest loyalty, and drives repeat 
+                                business through targeted messaging and automation.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Automated email sequences</li>
+                                <li>Personalized guest communications</li>
+                                <li>Booking confirmation workflows</li>
+                                <li>Loyalty program campaigns</li>
+                                <li>Segmented targeting</li>
+                                <li>Performance analytics</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">45% Open Rate</h4>
+                                        <p class="benefit-desc">Above industry average performance</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <circle cx="12" cy="12" r="6"></circle>
+                                            <circle cx="12" cy="12" r="2"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">25% Repeat Bookings</h4>
+                                        <p class="benefit-desc">Increase in guest retention</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/5077047/pexels-photo-5077047.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Email Marketing Campaign">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture Marketing -->
+                <div class="service-content" id="architecture-marketing">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Marketing Agency for Architects</h3>
+                            <p class="service-detail-description">
+                                Specialized marketing services for architectural firms and design professionals. We help 
+                                showcase your portfolio, attract high-value clients, and establish your brand as a leader 
+                                in the architectural industry through targeted digital strategies.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Portfolio website development</li>
+                                <li>Architectural photography coordination</li>
+                                <li>Industry-specific SEO</li>
+                                <li>Professional networking campaigns</li>
+                                <li>Award submission strategies</li>
+                                <li>Client testimonial management</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M3 21h18"></path>
+                                            <path d="M5 21V7l8-4v18"></path>
+                                            <path d="M19 21V11l-6-4"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">50+ Projects</h4>
+                                        <p class="benefit-desc">Successful architectural campaigns</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">Industry Expertise</h4>
+                                        <p class="benefit-desc">Specialized knowledge and networks</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Architectural Marketing">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="service-content" id="graphic-design">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Professional Graphic Design</h3>
+                            <p class="service-detail-description">
+                                Create stunning visual content that captures your brand's essence and communicates your 
+                                message effectively. Our design team specializes in hospitality branding, marketing 
+                                materials, and digital assets that drive engagement and bookings.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Brand identity development</li>
+                                <li>Marketing collateral design</li>
+                                <li>Digital asset creation</li>
+                                <li>Print design services</li>
+                                <li>Social media graphics</li>
+                                <li>Packaging and signage design</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="9" cy="9" r="2"></circle>
+                                            <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">Award-winning Designs</h4>
+                                        <p class="benefit-desc">Creative excellence recognized globally</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">48hr Turnaround</h4>
+                                        <p class="benefit-desc">Fast delivery without compromise</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Graphic Design Work">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Editing -->
+                <div class="service-content" id="video-editing">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Professional Video Editing</h3>
+                            <p class="service-detail-description">
+                                Transform raw footage into compelling video content that showcases your property and brand. 
+                                From promotional videos to virtual tours, our editing team creates high-quality content 
+                                that engages viewers and drives bookings.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Property showcase videos</li>
+                                <li>Virtual tour production</li>
+                                <li>Social media video content</li>
+                                <li>Promotional campaigns</li>
+                                <li>Testimonial video editing</li>
+                                <li>Motion graphics and animation</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">4K Quality</h4>
+                                        <p class="benefit-desc">Ultra-high definition video production</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">80% More Engagement</h4>
+                                        <p class="benefit-desc">Video content performance boost</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Video Editing Studio">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Influencer Marketing -->
+                <div class="service-content" id="influencer-marketing">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Influencer Marketing</h3>
+                            <p class="service-detail-description">
+                                Leverage the power of social media influencers to showcase your property and reach new 
+                                audiences. Our influencer marketing campaigns create authentic content that builds trust 
+                                and drives bookings through strategic partnerships.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Influencer identification and outreach</li>
+                                <li>Campaign strategy development</li>
+                                <li>Content collaboration</li>
+                                <li>Performance tracking</li>
+                                <li>ROI measurement</li>
+                                <li>Long-term partnership management</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">10M+ Reach</h4>
+                                        <p class="benefit-desc">Combined influencer audience</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">600% Engagement</h4>
+                                        <p class="benefit-desc">Higher than traditional advertising</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Influencer Marketing Campaign">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pre-launch Marketing -->
+                <div class="service-content" id="prelaunch-marketing">
+                    <div class="service-detail">
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title visible-heading">Pre-launch Marketing</h3>
+                            <p class="service-detail-description">
+                                Build anticipation and secure bookings before your property opens with our comprehensive 
+                                pre-launch marketing strategies. We create buzz, generate interest, and establish your 
+                                brand presence in the market before you welcome your first guests.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>Brand development and positioning</li>
+                                <li>Teaser campaign creation</li>
+                                <li>Early bird booking strategies</li>
+                                <li>Media relations and PR</li>
+                                <li>Partnership development</li>
+                                <li>Grand opening event planning</li>
+                            </ul>
+                            <div class="service-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">60% Pre-bookings</h4>
+                                        <p class="benefit-desc">Average occupancy at launch</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="benefit-text">
+                                        <h4 class="benefit-title visible-heading">Brand Recognition</h4>
+                                        <p class="benefit-desc">Established market presence</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Pre-launch Marketing Strategy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="services-cta">
+                <div class="cta-content">
+                    <h3 class="cta-title visible-heading">Ready to Transform Your Business?</h3>
+                    <p class="cta-description">
+                        Let's discuss how our comprehensive services can help you achieve your goals. 
+                        Schedule a free consultation with our experts today.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary" onclick="window.location.href='consult.html'">
+                            Get Free Consultation
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12,5 19,12 12,19"></polyline>
+                            </svg>
+                        </button>
+                        <button class="btn-secondary" onclick="window.location.href='index.html#testimonials'">View Success Stories</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="AbodeatAB Logo" class="logo-icon" />
+                        <span class="logo-text">AbodeatAB</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering hotels worldwide with intelligent revenue management solutions 
+                        that drive profitability and growth in the competitive hospitality market.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-title visible-heading">Services</h3>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Revenue Management</a></li>
+                            <li><a href="#" class="footer-link">Channel Management</a></li>
+                            <li><a href="#" class="footer-link">Website Development</a></li>
+                            <li><a href="#" class="footer-link">Digital Marketing & many more</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3 class="footer-title visible-heading">Company</h3>
+                        <ul class="footer-list">
+                            <li><a href="index.html#about" class="footer-link">About Us</a></li>
+                            <li><a href="index.html#testimonials" class="footer-link">Success Stories</a></li>
+                            <li><a href="index.html#blogs" class="footer-link">Insights</a></li>
+                            <li><a href="#" class="footer-link">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3 class="footer-title visible-heading">Support</h3>
+                        <ul class="footer-list">
+                            <li><a href="index.html#contact" class="footer-link">Contact Us</a></li>
+                            <li><a href="#" class="footer-link">Help Center</a></li>
+                            <li><a href="#" class="footer-link">Documentation</a></li>
+                            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 AbodeatAB. All rights reserved.</p>
+                <p class="footer-tagline">Transforming hospitality revenue management since 2006</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>

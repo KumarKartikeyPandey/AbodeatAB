@@ -1,3 +1,141 @@
+// Popup Form Manager
+class PopupFormManager {
+    constructor() {
+        this.popupIcon = document.getElementById('popupIcon');
+        this.popupFormOverlay = document.getElementById('popupFormOverlay');
+        this.popupForm = document.getElementById('popupForm');
+        this.popupCloseBtn = document.getElementById('popupCloseBtn');
+        this.popupThankYou = document.getElementById('popupThankYou');
+        this.popupCloseFinalBtn = document.getElementById('popupCloseFinalBtn');
+        
+        this.bindEvents();
+        this.showPopupAfterDelay();
+    }
+
+    bindEvents() {
+        // Show form when popup icon is clicked
+        if (this.popupIcon) {
+            this.popupIcon.addEventListener('click', () => this.showForm());
+        }
+
+        // Close form when close button is clicked
+        if (this.popupCloseBtn) {
+            this.popupCloseBtn.addEventListener('click', () => this.hideForm());
+        }
+
+        // Close form when overlay is clicked
+        if (this.popupFormOverlay) {
+            this.popupFormOverlay.addEventListener('click', (e) => {
+                if (e.target === this.popupFormOverlay) {
+                    this.hideForm();
+                }
+            });
+        }
+
+        // Handle form submission
+        if (this.popupForm) {
+            this.popupForm.addEventListener('submit', (e) => this.handleFormSubmit(e));
+        }
+
+        // Close thank you message
+        if (this.popupCloseFinalBtn) {
+            this.popupCloseFinalBtn.addEventListener('click', () => this.hideForm());
+        }
+
+        // Close form with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.popupFormOverlay.classList.contains('active')) {
+                this.hideForm();
+            }
+        });
+    }
+
+    showPopupAfterDelay() {
+        // Show popup icon after page loads (after preloader)
+        setTimeout(() => {
+            if (this.popupIcon) {
+                this.popupIcon.style.opacity = '1';
+                this.popupIcon.style.transform = 'scale(1)';
+            }
+        }, 3000); // Show after 3 seconds
+    }
+
+    showForm() {
+        if (this.popupFormOverlay) {
+            this.popupFormOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    hideForm() {
+        if (this.popupFormOverlay) {
+            this.popupFormOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            
+            // Reset form state
+            setTimeout(() => {
+                this.resetForm();
+            }, 300);
+        }
+    }
+
+    handleFormSubmit(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(this.popupForm);
+        const name = formData.get('name');
+        const hotel = formData.get('hotel');
+        const contact = formData.get('contact');
+
+        // Basic validation
+        if (!name || !hotel || !contact) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+
+        // Validate phone number (basic)
+        const phoneRegex = /^[\+]?[0-9\s\-\(\)]{10,}$/;
+        if (!phoneRegex.test(contact)) {
+            alert('Please enter a valid contact number.');
+            return;
+        }
+
+        // Show loading state
+        const submitBtn = this.popupForm.querySelector('.popup-submit-btn');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = 'Submitting...';
+        submitBtn.disabled = true;
+
+        // Simulate form submission
+        setTimeout(() => {
+            this.showThankYou();
+            
+            // Log form data (in real implementation, send to server)
+            console.log('Form submitted:', { name, hotel, contact });
+            
+            // Reset button
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        }, 1500);
+    }
+
+    showThankYou() {
+        if (this.popupForm && this.popupThankYou) {
+            this.popupForm.style.display = 'none';
+            this.popupThankYou.classList.add('active');
+        }
+    }
+
+    resetForm() {
+        if (this.popupForm && this.popupThankYou) {
+            this.popupForm.style.display = 'flex';
+            this.popupForm.reset();
+            this.popupThankYou.classList.remove('active');
+        }
+    }
+}
+
 // Theme Management
 class ThemeManager {
     constructor() {
@@ -189,7 +327,7 @@ class CursorManager {
         });
 
         // Add hover effects to interactive elements
-        const hoverElements = document.querySelectorAll('a, button, .service-card, .blog-card, .platform-logo, .story-section, .achievement-card, .contact-method');
+        const hoverElements = document.querySelectorAll('a, button, .service-card, .blog-card, .platform-logo, .story-section, .achievement-card, .contact-method, .popup-icon');
         
         hoverElements.forEach(element => {
             element.addEventListener('mouseenter', () => {
@@ -756,6 +894,7 @@ class App {
         this.performanceMonitor = new PerformanceMonitor();
         this.visibilityManager = new VisibilityManager();
         this.backgroundAnimationManager = new BackgroundAnimationManager();
+        this.popupFormManager = new PopupFormManager();
     }
 
     bindGlobalEvents() {
@@ -864,3 +1003,41 @@ const utils = {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { App, utils };
 }
+
+//Enquiy form Logic
+
+document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("h5K0T_dCWGhdo7xSo");  // 👈 Put your actual public key here
+
+    const form = document.getElementById("popupForm");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = {
+            name: document.getElementById("popupName").value,
+            hotel: document.getElementById("popupHotel").value,
+            contact: document.getElementById("popupContact").value
+        };
+
+        console.log("Form submitted:", formData);
+
+        emailjs.send("service_tl3f86z","template_gbx9nci", formData)
+            .then(function (response) {
+                console.log("✅ Email sent successfully:", response.status, response.text);
+                document.getElementById("popupForm").style.display = "none";
+                document.getElementById("popupThankYou").style.display = "block";
+            }, function (error) {
+                console.error("❌ Email sending failed:", error);
+                alert("Failed to send enquiry. Please try again later.");
+            });
+    });
+
+    document.getElementById("popupCloseFinalBtn").addEventListener("click", function () {
+        document.getElementById("popupFormOverlay").style.display = "none";
+        document.getElementById("popupForm").reset();
+        document.getElementById("popupForm").style.display = "block";
+        document.getElementById("popupThankYou").style.display = "none";
+    });
+});
+

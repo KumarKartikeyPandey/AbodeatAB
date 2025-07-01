@@ -7,6 +7,8 @@
     <meta name="description" content="Transform your hotel's financial performance with AbodeatAB's cutting-edge revenue management solutions. Expert strategies that deliver measurable results.">
     <link rel="stylesheet" href="styles_1.css">
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Crimson+Pro:wght@400;500;600&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Hind:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Kalam:wght@300;400;700&family=Karla:wght@400;500;600&family=La+Belle+Aurore&family=Lora:wght@400;500;600&family=Marck+Script&family=Merriweather:wght@400;700&family=Mukta:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Serif+Devanagari:wght@400;700&family=Pacifico&family=Parisienne&family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600&family=Sacramento&family=Satisfy&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </head>
 <body>
     <!-- Ultra-Premium Animated Preloader -->
@@ -117,6 +119,68 @@
     <!-- Custom Cursor -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
+
+    <!-- Floating Popup Form -->
+    <div class="popup-container" id="popupContainer">
+        <div class="popup-icon" id="popupIcon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <div class="popup-pulse"></div>
+            <div class="popup-tooltip">Fill Enquiry Form</div>
+        </div>
+        
+        <div class="popup-form-overlay" id="popupFormOverlay">
+            <div class="popup-form-container" id="popupFormContainer">
+                <div class="popup-form-header">
+                    <h3>Quick Enquiry</h3>
+                    <button class="popup-close-btn" id="popupCloseBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                
+                <form class="popup-form" id="popupForm">
+                    <div class="popup-form-group">
+                        <label for="popupName">Name *</label>
+                        <input type="text" id="popupName" name="name" required placeholder="Your full name">
+                    </div>
+                    
+                    <div class="popup-form-group">
+                        <label for="popupHotel">Hotel Name *</label>
+                        <input type="text" id="popupHotel" name="hotel" required placeholder="Your hotel name">
+                    </div>
+                    
+                    <div class="popup-form-group">
+                        <label for="popupContact">Contact Number *</label>
+                        <input type="tel" id="popupContact" name="contact" required placeholder="+91 XXXXX XXXXX">
+                    </div>
+                    
+                    <button type="submit" class="popup-submit-btn">
+                        Submit Enquiry
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+                
+                <div class="popup-thank-you" id="popupThankYou">
+                    <div class="thank-you-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Thank You!</h3>
+                    <p>Your enquiry has been submitted successfully. Our team will contact you soon.</p>
+                    <button class="popup-close-final-btn" id="popupCloseFinalBtn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Header -->
     <header class="header glass-effect">
